@@ -1,6 +1,6 @@
 {
   "name": "react-with-context",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "decorator that helps work with ContextApi in React",
   "main": "src/index",
   "scripts": {
