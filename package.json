@@ -6,7 +6,6 @@
   "scripts": {
     "tsc": "tsc",
     "build": "webpack",
-    "postinstall": "npm run build",
     "prepublishOnly": "npm run tsc && npm run build",
     "postversion": "git add . && git commit -m $npm_package_version && git tag v$npm_package_version && git push && git push --tags"
   },
@@ -23,14 +22,16 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^16.8.8",
-    "@types/react-addons-shallow-compare": "^0.14.22",
     "awesome-typescript-loader": "^5.2.1",
-    "react": "^16.8.4",
     "react-addons-shallow-compare": "^15.6.2",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "@types/react": "^16.8.8",
+    "@types/react-addons-shallow-compare": "^0.14.22"
+  }
 }
